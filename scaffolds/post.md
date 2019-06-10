@@ -1,5 +1,9 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
+comment: true
+toc: true
+tags: 
+	- Algorithm
+updated: {{ date}}
 ---
