@@ -79,7 +79,7 @@ theme: yilia
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:Jassy930/Jassy930.github.io.git
+  repository: https://github.com/Jassy930/Jassy930.github.io.git
   branch: master
 
 
