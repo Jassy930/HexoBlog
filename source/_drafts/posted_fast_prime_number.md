@@ -3,8 +3,8 @@ title: 验证质数
 comment: true
 toc: true
 tags: 
-	- Project Euler
-	- Algorithm
+    - Project Euler
+    - Algorithm
 date: 2019-6-5 16:58:35
 updated: 2019-6-10 16:36:01
 ---
@@ -45,15 +45,15 @@ updated: 2019-6-10 16:36:01
 vector<int> prime;
 for (int i = 2; ; i++)
 {
-	int n = 0;
-	for (int k = 2; k < i; k++)
-	{
-		if (i % k == 0) {
-			n++; break;
-		}
-	}
-	if (n == 0) { prime.push_back(i); cout << i << endl; }
-	if (prime.size() == 10001) return prime.back();
+    int n = 0;
+    for (int k = 2; k < i; k++)
+    {
+        if (i % k == 0) {
+            n++; break;
+        }
+    }
+    if (n == 0) { prime.push_back(i); cout << i << endl; }
+    if (prime.size() == 10001) return prime.back();
 }
 ```
 
@@ -121,16 +121,16 @@ End Function
 vector<int> prime;
 for (int i = 2; ; i++)
 {
-	int n = 0;
-	int ss = sqrt(i);
-	for (int k = 2; k <= ss; k++)
-	{
-		if (i % k == 0) {
-			n++; break;
-		}
-	}
-	if (n == 0) { prime.push_back(i); cout << i << endl; }
-	if (prime.size() == 10001) return prime.back();
+    int n = 0;
+    int ss = sqrt(i);
+    for (int k = 2; k <= ss; k++)
+    {
+        if (i % k == 0) {
+            n++; break;
+        }
+    }
+    if (n == 0) { prime.push_back(i); cout << i << endl; }
+    if (prime.size() == 10001) return prime.back();
 }
 ```
 
@@ -145,17 +145,17 @@ for (int i = 2; ; i++)
 vector<int> prime;
 for (int i = 2; ; i++)
 {
-	int n = 0;
-	int ss = sqrt(i);
-	for (int k = 0; k < prime.size(); k++)
-	{
-		if (i % prime.at(k) == 0) {
-			n++; break;
-		}
-		if (prime.at(k) > ss) break;
-	}
-	if (n == 0) { prime.push_back(i); cout << i << endl; }
-	if (prime.size() == 10001) return prime.back();
+    int n = 0;
+    int ss = sqrt(i);
+    for (int k = 0; k < prime.size(); k++)
+    {
+        if (i % prime.at(k) == 0) {
+            n++; break;
+        }
+        if (prime.at(k) > ss) break;
+    }
+    if (n == 0) { prime.push_back(i); cout << i << endl; }
+    if (prime.size() == 10001) return prime.back();
 }
 ```
 

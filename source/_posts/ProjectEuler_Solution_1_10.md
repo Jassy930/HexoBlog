@@ -8,9 +8,11 @@ date: 2019-06-12 16:51:05
 updated: 2019-06-12 16:51:05
 ---
 
+> Working is not boring, Earning money is boring.
+
 自己做的Project Euler的题解，不见得最优，也不见得优雅，但是答案是对的。基本上可以暴力求解的都是直接暴力求的。
 
-## [Problem 1](https://projecteuler.net/problem=1)
+## [Problem 1:Multiples of 3 and 5](https://projecteuler.net/problem=1)
 
 暴力遍历，能整除3或者5的话累加
 
@@ -27,7 +29,7 @@ int problem1()
 }
 ```
 
-## [Problem 2](https://projecteuler.net/problem=2)
+## [Problem 2:Even Fibonacci numbers](https://projecteuler.net/problem=2)
 
 把4000000以下的 fib 数列都求出来，再遍历一般累加奇数。
 
@@ -57,7 +59,7 @@ int problem2()
 
 ```
 
-## [Problem 3](https://projecteuler.net/problem=3)
+## [Problem 3:Largest prime factor](https://projecteuler.net/problem=3)
 
 从小打到大找因数，当找到一个因数之后将原始数字除以这个因数，再继续判断。
 
@@ -89,7 +91,7 @@ long long problem3()
 
 ```
 
-## [Problem 4](https://projecteuler.net/problem=4)
+## [Problem 4:Largest palindrome product](https://projecteuler.net/problem=4)
 
 暴力遍历，判断是回文数后记录最大值。
 
@@ -122,11 +124,11 @@ int problem4()
 
 ```
 
-## [Problem 5](https://projecteuler.net/problem=5)
+## [Problem 5:Smallest multiple](https://projecteuler.net/problem=5)
 
 这个没写程序，直接在计算器里乘了一下。。。
 
-## [Problem 6](https://projecteuler.net/problem=6)
+## [Problem 6:Sum square difference](https://projecteuler.net/problem=6)
 
 嗯，算数题，算就对了。
 
@@ -147,7 +149,7 @@ int problem6()
 
 ```
 
-## [Problem 7](https://projecteuler.net/problem=7)
+## [Problem 7:10001st prime](https://projecteuler.net/problem=7)
 
 判断素数，前面有一篇文章有详细解释。
 
@@ -171,7 +173,7 @@ int problem7()
 
 ```
 
-## [Problem 8](https://projecteuler.net/problem=8)
+## [Problem 8:Largest product in a series](https://projecteuler.net/problem=8)
 
 暴力遍历
 
@@ -212,7 +214,7 @@ int problem8()
 
 ```
 
-## [Problem 9](https://projecteuler.net/problem=9)
+## [Problem 9:Special Pythagorean triplet](https://projecteuler.net/problem=9)
 
 暴力遍历
 
@@ -235,7 +237,7 @@ void problem9()
 
 ```
 
-## [Problem 10](https://projecteuler.net/problem=10)
+## [Problem 10:Summation of primes](https://projecteuler.net/problem=10)
 
 同 Problem 7 看之前的文章。
 

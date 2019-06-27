@@ -5,7 +5,7 @@
 # Site
 title: 弱者
 subtitle:
-description:
+description: Little blog, Little think
 keywords:
 author: Jassy
 language:
@@ -79,7 +79,7 @@ theme: yilia
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/Jassy930/Jassy930.github.io.git
+  repository: git@github.com:Jassy930/Jassy930.github.io.git
   branch: master
 
 
