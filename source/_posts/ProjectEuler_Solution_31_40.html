@@ -4,7 +4,8 @@ comment: true
 toc: true
 tags:
   - Project Euler
-updated: 2019-7-1 10:51:26
+abbrlink: 3f1bfcb
+updated: 2019-07-01 10:51:26
 ---
 
 <!DOCTYPE html><html><head>
@@ -275,30 +276,17 @@ pre[data-line] .line-highlight[data-end]:after {
 <blockquote>
 <p>&#x7F57;&#x9A6C;&#x4E0D;&#x662F;&#x4E00;&#x5929;&#x5EFA;&#x6210;&#x7684;&#xFF0C;&#x4F60;&#x4E5F;&#x4E0D;&#x4F1A;&#x4E00;&#x4E0B;&#x6210;&#x4E3A;&#x68A6;&#x60F3;&#x4E2D;&#x7684;&#x4EBA;&#xFF0C;&#x4F46;&#x662F;&#x53EA;&#x8981;&#x5728;&#x5B66;&#x4E60;&#x5728;&#x52AA;&#x529B;&#xFF0C;&#x5C31;&#x662F;&#x8D8A;&#x6765;&#x8D8A;&#x63A5;&#x8FD1;&#x7684;&#x3002;</p>
 </blockquote>
-<ul>
-<li><a href="#project-euler-%E9%A2%98%E8%A7%A331~40"> Project Euler  &#x9898;&#x89E3;&#xFF1A;31~40</a>
-<ul>
-<li><a href="#problem-31-coin-sumshttpsprojecteulernetproblem31"> Problem 31: Coin sums</a></li>
-<li><a href="#problem-32-pandigital-productshttpsprojecteulernetproblem32"> Problem 32: Pandigital products</a></li>
-<li><a href="#problem-33-digit-cancelling-fractionshttpsprojecteulernetproblem3"> Problem 33: Digit cancelling fractions</a></li>
-<li><a href="#problem-34-digit-factorialshttpsprojecteulernetproblem34"> Problem 34: Digit factorials</a></li>
-<li><a href="#problem-35-circular-primeshttpsprojecteulernetproblem35"> Problem 35: Circular primes</a></li>
-<li><a href="#problem-36-double-base-palindromeshttpsprojecteulernetproblem36"> Problem 36: Double-base palindromes</a></li>
-<li><a href="#problem-37-truncatable-primeshttpsprojecteulernetproblem37"> Problem 37: Truncatable primes</a></li>
-<li><a href="#problem-38-pandigital-multipleshttpsprojecteulernetproblem38"> Problem 38: Pandigital multiples</a></li>
-<li><a href="#problem-39-integer-right-triangleshttpsprojecteulernetproblem39"> Problem 39: Integer right triangles</a></li>
-<li><a href="#problem-40-champernownes-constanthttpsprojecteulernetproblem40"> Problem 40: Champernowne&apos;s constant</a></li>
-<li><a href="#prime-python"> Prime (python)</a></li>
-</ul>
-</li>
-</ul>
+
 <p>&#x7EE7;&#x7EED;&#x4E0A;&#x4E00;&#x6B21;&#x7684;Project Euler&#x7684;&#x9898;&#x89E3;&#xFF0C;&#x4E0D;&#x89C1;&#x5F97;&#x6700;&#x4F18;&#xFF0C;&#x4E5F;&#x4E0D;&#x89C1;&#x5F97;&#x4F18;&#x96C5;&#xFF0C;&#x4F46;&#x662F;&#x7B54;&#x6848;&#x662F;&#x5BF9;&#x7684;&#xFF0C;&#x601D;&#x8DEF;&#x4E5F;&#x662F;&#x6CA1;&#x95EE;&#x9898;&#x7684;&#x3002;&#x8FD9;&#x6B21;&#x662F;31~40&#x9898;&#x3002;</p>
+
 <p>(&#x5947;&#x602A;&#xFF0C;&#x8FD9;&#x4EBA;&#x600E;&#x4E48;&#x53C8;&#x5F00;&#x59CB;&#x7528;python&#x5199;&#x4E86;</p>
+
 <h2 class="mume-header" id="problem-31-coin-sumshttpsprojecteulernetproblem31"><a href="https://projecteuler.net/problem=31">Problem 31: Coin sums</a></h2>
 
 <p>&#x55EF;&#x3002;&#x3002;&#x633A;&#x7ECF;&#x5178;&#x633A;&#x5E38;&#x89C1;&#x7684;&#x5B8C;&#x5168;&#x80CC;&#x5305;DP&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x6EE1;&#x8111;&#x5B50;&#x4E0D;&#x77E5;&#x9053;&#x5728;&#x60F3;&#x4EC0;&#x4E48;&#xFF0C;&#x6123;&#x662F;&#x6CA1;&#x505A;&#x51FA;&#x6765;&#xFF0C;&#x540E;&#x6765;&#x770B;&#x4E86;&#x770B;&#x522B;&#x4EBA;&#x7684;&#x63D0;&#x793A;&#x624D;&#x60F3;&#x5230;&#x5E94;&#x8BE5;&#x6309;&#x7167;&#x786C;&#x5E01;&#x79CD;&#x7C7B;&#x53BB;&#x5FAA;&#x73AF;&#x3002;&#x4E00;&#x76F4;&#x5728;&#x60F3;&#x600E;&#x4E48;&#x53BB;&#x5904;&#x7406;&#x91CD;&#x590D;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
 <p><a href="https://projecteuler.net/overview=031">&#x8FD9;&#x91CC;</a>&#x662F;&#x8FD9;&#x9053;&#x9898;&#x7684;&#x8BE6;&#x7EC6;&#x89E3;&#x91CA;<br>
 <a href="https://blog.csdn.net/na_beginning/article/details/62884939">&#x8FD9;&#x91CC;</a>&#x662F;&#x5B8C;&#x5168;&#x80CC;&#x5305;&#x3001;01&#x80CC;&#x5305;&#x3001;&#x591A;&#x91CD;&#x80CC;&#x5305;&#x7684;&#x6BD4;&#x8F83;&#x7684;&#x53C2;&#x8003;&#x8D44;&#x6599;&#xFF08;&#x6211;&#x6CA1;&#x770B;</p>
+  <!-- more -->
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword">def</span> <span class="token function">pro31</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token comment"># &#x5B8C;&#x5168;&#x80CC;&#x5305;DP</span>
     coin <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">]</span>

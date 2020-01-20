@@ -2,24 +2,14 @@
 title: LeetCode Contest No.132
 comment: true
 toc: true
-tags: 
-	- LeetCode
-	- Algorithm
-updated: 2019-4-16 00:04:27
+tags:
+  - LeetCode
+  - Algorithm
+abbrlink: d064e371
+updated: 2019-04-16 00:04:27
 ---
 
 
-* [LeetCode Contest 记录](#leetcode-contest-记录)
-	* [Contest 132](#contest-132)
-		* [No.5024 除数博弈](#no-除数博弈)
-		* [No.5030 节点与其祖先之间的最大差值](#no-节点与其祖先之间的最大差值)
-		* [No.5025 最长等差数列](#no-最长等差数列)
-		* [No.5031 从先序遍历还原二叉树](#no-从先序遍历还原二叉树)
-  
-
-
-# LeetCode Contest 记录
-  
 ## Contest 132
 
 通过：3/4  排名：99/1047  0:59:44  1WA
@@ -27,7 +17,6 @@ updated: 2019-4-16 00:04:27
 最后一道题规定时间内没有做出来，超时7分钟做出来的，无错误提交（似乎）。
 
 这次竞赛感觉看完题都比较虚，但是其实做题之后的效果比预想的好，虽然最后一道题规定时间内没有做出来，但是感觉可以接受，也是很久没有出过 hard 的题目了，这次的 hard 题目实现的相当的。。。。复杂且乱，但是能做出来就是好事。
-
 ### No.5024 [除数博弈](https://leetcode-cn.com/contest/weekly-contest-132/problems/divisor-game/)
 
 1WA
@@ -38,6 +27,7 @@ updated: 2019-4-16 00:04:27
 
 实现思路上没啥可说的，就是动态规划的思路，从小到大依次遍历所有约数对应的```N-x```的值，所有约数全部为 true 的时候，这时无论先手做如何操作，对方都是必胜的情况，所以这时的 N 为 false ，其余所有情况均为 true ，只需要在每一步操作时将 N 的值变为对应的 false 的 ```N-x``` 的值即可。
 
+  <!-- more -->
 ### No.5030 [节点与其祖先之间的最大差值](https://leetcode-cn.com/contest/weekly-contest-132/problems/maximum-difference-between-node-and-ancestor/)
 
 一开始脑袋有点乱，想用 pair<int,int> 去实现同时寻找最大值最小值，但是思路一直没有理顺，抱着这次竞赛就放弃了的态度（。。。。）就想着先只写一个 max 吧，很快完成之后，同样的方法复制一份 min ，游戏结束。

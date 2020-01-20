@@ -2,10 +2,11 @@
 title: Stanford CS224n Lecture.1
 comment: true
 toc: true
-tags: 
-	- Lessons
-	- NLP
-updated: 2019-6-25 09:30:12
+tags:
+  - Lessons
+  - NLP
+abbrlink: 6deb531b
+updated: 2019-06-25 09:30:12
 ---
 
 # Lecture 1: Introduction to NLP and Deep Learning
@@ -17,7 +18,6 @@ updated: 2019-6-25 09:30:12
 - computer science 
 - artificial intelligence
 - linguistics
-
 ### Goal
 
 let computer process or "understand" NL to perform tasks
@@ -27,6 +27,7 @@ let computer process or "understand" NL to perform tasks
 
 Fully understanding and representing the meaning of language is a difficult goal.
 
+  <!-- more -->
 ### NLP Levels
 
 speech     text

@@ -2,11 +2,12 @@
 title: 验证质数
 comment: true
 toc: true
-tags: 
-    - Project Euler
-    - Algorithm
-date: 2019-6-5 16:58:35
-updated: 2019-6-10 16:36:01
+tags:
+  - Project Euler
+  - Algorithm
+abbrlink: 6057a4d0
+date: 2019-06-05 16:58:35
+updated: 2019-06-10 16:36:01
 ---
 
 * [问题](#问题 )

@@ -2,9 +2,10 @@
 title: 大整数加法和大整数乘法
 comment: true
 toc: true
-tags:
+abbrlink: b2990560
 date: 2019-06-11 15:29:58
 updated: 2019-06-11 15:29:58
+tags:
 ---
 
 > 有时候会在问自己，是不够爱，还是缺少爱的能力。
@@ -36,7 +37,7 @@ string BIGadd(vector<string> nums)
 	}
 }
 ```
-
+  <!-- more -->
 大整数乘法代码：
 
 ``` c++ 

@@ -2,9 +2,10 @@
 title: 在Jetson TX1上安装Caffe--安装与问题排除
 comment: true
 toc: true
-tags:
+abbrlink: a0ba0a2e
 date: 2017-03-11 15:29:58
 updated: 2017-03-11 15:29:58
+tags:
 ---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->

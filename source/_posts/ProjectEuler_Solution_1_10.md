@@ -4,6 +4,7 @@ comment: true
 toc: true
 tags:
   - Project Euler
+abbrlink: e9742231
 date: 2019-06-12 16:51:05
 updated: 2019-06-12 16:51:05
 ---
@@ -28,7 +29,7 @@ int problem1()
 	return num;
 }
 ```
-
+  <!-- more -->
 ## [Problem 2:Even Fibonacci numbers](https://projecteuler.net/problem=2)
 
 把4000000以下的 fib 数列都求出来，再遍历一般累加奇数。
