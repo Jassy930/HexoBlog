@@ -76,17 +76,17 @@ Elapsed time is 0.183769 seconds.
 
 matlab 中去做这项工作的部分叫做 Parallel pool。在 matlab 的设置界面中或者主界面的左下角的图标处可以进入并行计算工具箱的设置。大概长这样：
 
-![并行工具箱设置](/assets/Matlab_cluster_parfor/并行工具箱设置.png)
+![并行工具箱设置](并行工具箱设置.png)
 
 最上面的 Clusters 是关于计算的集群的设置，请选择 local （后面看我努力程度是否出个搭建集群的教程吧，非常简单）
 
-![Cluster Profile Manager](/assets/Matlab_cluster_parfor/ClusterProfileManager.png)
+![Cluster Profile Manager](ClusterProfileManager.png)
 
 点击蓝色文字处 Cluster Profile Manager 就可以对本地的这个 Cluster 进行配置了，中间最重要的配置是 **Number of workers to start on your local machine** 这个决定了有多少个小伙子给你干活，默认情况下，CPU 是几核的就填几。（这一步在实际运行中有一些疑问，核心数or线程数，等待后续进一步验证。）修改后可以顺手点击 **Validate** 进行验证，几项测试都通过的话就说明配置没有问题，退出设置后点击同样在主界面中左下角菜单中的另外一项 **Start parallel pool** 就可以打开了，或者在程序中运行到 parfor 时 MATLAB 也会自动开启。
 
 开启之后可以开启系统的任务管理器，查看一下 matlab.exe 有几个，如果 worker 数量为4，那么应该有五个进程在运行，一个是用来进行调度管理的，另外四个是干活的小伙子。可以通过占用内存的不同来区别这两种进程，会有一个占用的内存大小与其他有较大的区别。
 
-![Validation Relusts](/assets/Matlab_cluster_parfor/ValidationResults.png)
+![Validation Relusts](ValidationResults.png)
 
 在并行工具箱的设置中还有两个设置，一个是在遇到需要进行并行计算的语句时自动开启这个 Parallel Pool ，另一个是在一定时间内没有使用并行计算的时候，自动关闭，时间可以自己进行设置。
 
@@ -104,7 +104,7 @@ matlab 中去做这项工作的部分叫做 Parallel pool。在 matlab 的设置
 
 MATLAB 对 parfor 使用中的变量分为五类，如下图：
 
-![parfor_vartypes](/assets/Matlab_cluster_parfor/parfor_vartypes.png)
+![parfor_vartypes](parfor_vartypes.png)
 
 - loop Variable ： 循环变量，就是简单的 for 循环中的变量，上图中的 i。
 - Sliced Variable ： 某数组中分发给每个 worker 的变量，或者多个 worker 存储到同一个数组中的变量，要求不同 worker 接触的变量不能重复交叉的现象，并且下标连续，不能使用例如 2*i 这类下标。
